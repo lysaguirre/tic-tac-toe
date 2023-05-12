@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/fondo.jpg);
+  height: 100vh;
+  flex-direction: column;
+}
+body main {
+  background-color: rgb(250, 198, 255);
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+body main h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+}
+body main .board {
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px black;
+}
+body main .board .square {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-sizing: border-box;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .board .square .circle {
+  width: 150px;
+  height: 150px;
+  color: black;
+  border-radius: 50%;
+  border: 15px solid black;
+  box-sizing: border-box;
+}
+body main .board .square .cross {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform: rotate(45deg);
+  display: flex;
+}
+body main .board .square .cross::before, body main .board .square .cross::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+}
+body main .board .square .cross::before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+body main .board .square .cross::after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+body main p {
+  text-align: center;
+  color: black;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  font-style: oblique;
+  font-size: 20px;
+  font-weight: bolder;
+}/*# sourceMappingURL=style.css.map */
