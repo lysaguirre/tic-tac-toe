@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(assets/fondo.jpg);
+  background-image: url(assets/fondo.jpg);
   height: 100vh;
   flex-direction: column;
 }
