@@ -4,12 +4,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/fondo.jpg);
+  background: url(assets/fondo.jpg);
   height: 100vh;
   flex-direction: column;
 }
 body main {
-  background-color: rgb(250, 198, 255);
+  background-color: rgb(213, 213, 255);
   width: 800px;
   display: flex;
   flex-direction: column;
